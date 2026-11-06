@@ -70,8 +70,8 @@ Most tools only test the first. Trigger Test treats both as first-class, plus **
 clawhub install trigger-test
 
 # Or from source
-git clone https://github.com/Thomaszhou22/trigger-test.git
-cp -r trigger-test ~/.openclaw/skills/
+git clone https://github.com/Thomaszhou22/skill-trigger-test.git
+cp -r skill-trigger-test ~/.openclaw/skills/
 ```
 
 ## Quick Start

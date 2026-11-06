@@ -69,8 +69,8 @@
 clawhub install trigger-test
 
 # 或从源码
-git clone https://github.com/Thomaszhou22/trigger-test.git
-cp -r trigger-test ~/.openclaw/skills/
+git clone https://github.com/Thomaszhou22/skill-trigger-test.git
+cp -r skill-trigger-test ~/.openclaw/skills/
 ```
 
 ## 快速开始
