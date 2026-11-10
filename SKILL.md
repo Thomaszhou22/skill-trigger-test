@@ -1,6 +1,6 @@
 ---
 name: skill-trigger-test
-version: 1.1.0
+version: 1.1.1
 description: Test whether your skills actually fire. Feed it synthetic user messages, it checks which skill SHOULD trigger vs which stays silent, and scores trigger accuracy per skill catches the silent-failure case the official eval tool misses. skillsYesNo: , , skillsreport
 ---
 
