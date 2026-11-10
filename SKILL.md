@@ -1,6 +1,6 @@
 ---
 name: skill-trigger-test
-version: 1.0.0
+version: 1.1.0
 description: "Test whether your skills actually fire. Feed it synthetic user messages, it checks which skill SHOULD trigger vs which stays silent, and scores trigger accuracy per skill — catches the silent-failure case the official eval tool misses. 测试你的技能是否真的会触发：喂入模拟用户消息，逐个验证该触发的触发、不该触发的安静，输出每个技能的触发准确率报告——专治官方评测工具测不出的静默失灵。"
 ---
 
