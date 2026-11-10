@@ -8,6 +8,31 @@ description: "Test whether your skills actually fire. Feed it synthetic user mes
 
 Your skill looks perfect on paper. Then a user types the exact phrase and… nothing fires. Trigger Test catches that **before** your users do: it simulates realistic user messages, applies trigger analysis per skill, and scores hit / miss / false-alarm for each.
 
+
+## Onboarding（首次使用）
+
+当用户第一次触发本 skill 且 `memory/skill_trigger_test_state.json` 不存在时，执行一次性引导：
+
+1. **介绍能力**（一句话）：_"我可以测试你的技能是否真的会触发——喂入模拟消息，验证该触发的触发、该安静的安静。"_
+
+2. **快速配置：**
+
+1. **测试消息来源**（默认：两者）
+   - 自动生成（从 skill description 推导）
+   - 用户真实消息（贴入实际发过的消息）
+   - 两者（先自动后真实，最全面）
+2. **报告格式**（默认：完整表格）
+   - 完整表格（hit/miss/false-alarm 逐条）
+   - 摘要（仅数字汇总 + top 3 修复）
+
+3. **写入初始状态文件** `memory/skill_trigger_test_state.json`（JSON 格式，含 `onboarded: true` 和时间戳）
+
+4. **确认完成**：_"设置完成！以后直接用就行。随时可以说'reset settings'重新配置。"_
+
+**Onboarding 只执行一次**，后续每次激活直接读取状态文件。用户说 "reset settings" 时删除状态文件重新引导。
+
+---
+
 ## When to run
 
 1. After publishing or updating any skill (pre-flight check)
